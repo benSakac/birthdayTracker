@@ -1,7 +1,4 @@
-if (process.env.NODE_ENV !== "production") {
-	require("dotenv").config();
-}
-
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const cookie = require("cookie-session");
@@ -37,4 +34,4 @@ app.use(
 );
 app.use(routeDecider);
 
-app.listen(3000);
+app.listen(8080);
